@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Complete Technical SEO & Site Health Audit Checklist (2026)</title>
+<meta name="description" content="A complete, practical technical SEO and site-health audit checklist for 2026 — on-page, crawlability, links, redirects, security, and social — with a free tool for each step." />
+<link rel="canonical" href="https://lordbasilaiassistant-sudo.github.io/eli-web-tools/guides/technical-seo-audit-checklist.html" />
+<meta property="og:title" content="The Complete Technical SEO & Site Health Audit Checklist (2026)" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"The Complete Technical SEO & Site Health Audit Checklist (2026)","author":{"@type":"Organization","name":"Eli Web Tools"},"about":"technical SEO audit checklist"}
+</script>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#21262d;--txt:#e6edf3;--mut:#9aa6b2;--accent:#58a6ff;--ok:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt)}
+  .wrap{max-width:740px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent)}
+  h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin-bottom:10px}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:28px}
+  h2{font-size:22px;margin:34px 0 8px;padding-top:8px;border-top:1px solid var(--line)}
+  h3{font-size:17px;margin:18px 0 6px;color:#e6edf3}
+  p{margin-bottom:13px;color:#d6dee7}
+  ul{margin:0 0 14px 20px;color:#d6dee7}
+  li{margin-bottom:7px}
+  .tool{display:inline-block;background:#1f6feb22;border:1px solid var(--accent);color:var(--accent);text-decoration:none;border-radius:7px;padding:5px 11px;font-size:14px;font-weight:600;margin:4px 6px 4px 0}
+  .toc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:8px}
+  .toc a{display:block;padding:3px 0;text-decoration:none}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a style="color:var(--mut);font-size:14px;text-decoration:none" href="../index.html">← Eli Web Tools</a>
+  <h1>The Complete Technical SEO &amp; Site Health Audit Checklist (2026)</h1>
+  <p class="meta">Every technical check that actually moves rankings and trust — with a free tool for each step.</p>
+
+  <p>A technical audit isn't about chasing a perfect score; it's about removing the things that quietly hold a site back — pages search engines can't read, links that go nowhere, a broken padlock, an ugly share preview. This checklist walks the full surface in the order that matters, and points you at a tool to run each check on demand.</p>
+
+  <div class="toc">
+    <strong>Jump to:</strong>
+    <a href="#onpage">1. On-page SEO</a>
+    <a href="#crawl">2. Crawlability — robots &amp; sitemap</a>
+    <a href="#links">3. Links &amp; redirects</a>
+    <a href="#security">4. Security &amp; HTTPS</a>
+    <a href="#social">5. Social / sharing</a>
+  </div>
+
+  <h2 id="onpage">1. On-page SEO</h2>
+  <p>The signals search engines read straight from the HTML. Get these right and crawlers understand the page; get them wrong and even great content underperforms.</p>
+  <ul>
+    <li>Unique <strong>title</strong> (10–60 chars) and <strong>meta description</strong> (50–160) per page</li>
+    <li>Exactly one <strong>&lt;h1&gt;</strong>, a logical heading structure below it</li>
+    <li><strong>Canonical</strong> tag to prevent duplicate-content dilution</li>
+    <li><strong>Viewport</strong>, <strong>lang</strong>, and image <strong>alt</strong> text</li>
+    <li><strong>Structured data</strong> (JSON-LD) for rich-result eligibility</li>
+  </ul>
+  <a class="tool" href="https://apify.com/eliai/website-seo-tech-auditor" target="_blank" rel="noopener">SEO &amp; Tech Auditor →</a>
+  <a class="tool" href="on-page-seo-audit.html">On-page guide</a>
+
+  <h2 id="crawl">2. Crawlability — robots.txt &amp; sitemap</h2>
+  <p>Before a page can rank, it has to be found and allowed. Two files control this, and both are common sources of accidental, traffic-killing mistakes.</p>
+  <h3>robots.txt</h3>
+  <p>Make sure you're not accidentally blocking crawlers (the dreaded <code>Disallow: /</code>), and that your sitemap is declared.</p>
+  <a class="tool" href="https://apify.com/eliai/robots-txt-analyzer" target="_blank" rel="noopener">robots.txt Analyzer →</a>
+  <h3>XML sitemap</h3>
+  <p>Confirm it exists, lists your important URLs, stays under the 50,000-URL / 50MB limits, and uses <code>&lt;lastmod&gt;</code> so crawlers prioritize fresh content.</p>
+  <a class="tool" href="https://apify.com/eliai/sitemap-analyzer" target="_blank" rel="noopener">Sitemap Analyzer →</a>
+
+  <h2 id="links">3. Links &amp; redirects</h2>
+  <p>Broken links waste crawl budget and frustrate users; sloppy redirects leak link equity and slow loads.</p>
+  <ul>
+    <li><strong>Broken links</strong> — find 404s, 5xx, and dead destinations across the page</li>
+    <li><strong>Redirect chains</strong> — keep them to a single 301 hop; kill loops and 302s used where 301 belongs</li>
+  </ul>
+  <a class="tool" href="https://apify.com/eliai/broken-link-checker" target="_blank" rel="noopener">Broken Link Checker →</a>
+  <a class="tool" href="https://apify.com/eliai/redirect-chain-checker" target="_blank" rel="noopener">Redirect Chain Checker →</a>
+  <a class="tool" href="extract-website-contacts.html" style="display:none"></a>
+
+  <h2 id="security">4. Security &amp; HTTPS</h2>
+  <p>Security is a ranking and trust factor — and a broken padlock scares users away.</p>
+  <ul>
+    <li><strong>HTTP security headers</strong> — HSTS, CSP, X-Frame-Options, and more</li>
+    <li><strong>Mixed content</strong> — no insecure <code>http://</code> resources on an HTTPS page</li>
+  </ul>
+  <a class="tool" href="https://apify.com/eliai/security-headers-checker" target="_blank" rel="noopener">Security Headers Checker →</a>
+  <a class="tool" href="https://apify.com/eliai/mixed-content-checker" target="_blank" rel="noopener">Mixed Content Checker →</a>
+
+  <h2 id="social">5. Social / sharing</h2>
+  <p>Often skipped, but it's what determines whether your links get clicked when shared. Open Graph and Twitter Card tags control the title, description, and image that appear in social feeds and chat apps.</p>
+  <a class="tool" href="https://apify.com/eliai/social-preview-checker" target="_blank" rel="noopener">Social Preview Checker →</a>
+
+  <h2 style="border:none">Run the whole audit, by hand or by agent</h2>
+  <p>Every tool above runs as a plain API and as an agent tool via Apify MCP — no API key, pay per check — so you can wire the full audit into a CI pipeline or an AI agent. Start with the <a href="https://apify.com/eliai/website-seo-tech-auditor" target="_blank" rel="noopener">SEO &amp; Tech Auditor</a>, then work down the list.</p>
+
+  <footer>
+    By <a href="../index.html">Eli Web Tools</a> — clean, private browser &amp; web tools. No ads, no tracking.
+  </footer>
+</div>
+</body>
+</html>
