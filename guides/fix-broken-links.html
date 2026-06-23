@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Find & Fix Broken Links on a Website (2026)</title>
+<meta name="description" content="Why broken links hurt SEO and UX, how to find every dead link on a page (404s, 5xx, timeouts), and how to fix them — by hand or automatically." />
+<link rel="canonical" href="https://lordbasilaiassistant-sudo.github.io/eli-web-tools/guides/fix-broken-links.html" />
+<meta property="og:title" content="How to Find & Fix Broken Links on a Website (2026)" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Find & Fix Broken Links on a Website (2026)","author":{"@type":"Organization","name":"Eli Web Tools"},"about":"find and fix broken links"}
+</script>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#21262d;--txt:#e6edf3;--mut:#9aa6b2;--accent:#58a6ff;--ok:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt)}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent)}
+  h1{font-size:29px;line-height:1.25;letter-spacing:-.02em;margin-bottom:10px}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:28px}
+  h2{font-size:21px;margin:30px 0 10px}
+  p{margin-bottom:14px;color:#d6dee7}
+  ul{margin:0 0 16px 20px;color:#d6dee7}
+  li{margin-bottom:8px}
+  .cta{margin:26px 0;background:linear-gradient(180deg,var(--card),#0e1420);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .cta a{display:inline-block;background:#1f6feb22;border:1px solid var(--accent);color:var(--accent);text-decoration:none;border-radius:8px;padding:9px 14px;font-weight:600;margin-top:8px}
+  code{background:#161b22;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:14px}
+  .home{color:var(--mut);font-size:14px;text-decoration:none}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="home" href="../index.html">← Eli Web Tools</a>
+  <h1>How to Find &amp; Fix Broken Links on a Website</h1>
+  <p class="meta">Why dead links cost you, how to find every one, and how to fix them fast.</p>
+
+  <p>Links rot. Pages move, sites shut down, URLs get renamed — and over time any website accumulates links that point to nowhere. Broken links quietly hurt you in two ways: they frustrate visitors (a dead end kills trust), and they waste crawl budget while signaling neglect to search engines. The good news: they're easy to find and fix once you look.</p>
+
+  <h2>What counts as a "broken" link</h2>
+  <ul>
+    <li><strong>404 / 410</strong> — the page is gone.</li>
+    <li><strong>5xx</strong> — the destination server is erroring.</li>
+    <li><strong>Timeouts &amp; connection errors</strong> — the domain is dead or unreachable.</li>
+    <li><strong>Soft 404s</strong> — returns 200 but the content is a "not found" page (harder to detect automatically).</li>
+  </ul>
+
+  <h2>How to find them</h2>
+  <p>For a single page, you can inspect each link by hand — but that doesn't scale past a few. The reliable method is to extract every outbound <code>&lt;a href&gt;</code> on the page and request each one's HTTP status, flagging anything 4xx/5xx or unreachable. Do that across your key pages on a schedule and link rot never builds up.</p>
+
+  <div class="cta">
+    <strong>Scan any page's links in one call</strong>
+    <p style="color:var(--mut);font-size:15px;margin:6px 0 0">Our <strong>Broken Link Checker</strong> pulls every outbound link on a page, checks each one's status, and returns the full list of broken URLs with their codes — no API key, pay per page, callable via Apify MCP.</p>
+    <a href="https://apify.com/eliai/broken-link-checker" target="_blank" rel="noopener">Run the Link Checker →</a>
+  </div>
+
+  <h2>How to fix what you find</h2>
+  <ul>
+    <li><strong>Update the URL</strong> if the destination simply moved.</li>
+    <li><strong>Swap or remove</strong> links to sites that are permanently gone.</li>
+    <li><strong>301-redirect</strong> your own broken internal URLs to the closest live equivalent.</li>
+    <li><strong>Re-check after fixing</strong> to confirm everything resolves.</li>
+  </ul>
+
+  <p>Pair link-checking with a full <a href="on-page-seo-audit.html">on-page SEO audit</a> and you've covered the two highest-ROI, lowest-effort technical SEO wins on any page.</p>
+
+  <footer>
+    By <a href="../index.html">Eli Web Tools</a> — clean, private browser &amp; web tools. No ads, no tracking.
+  </footer>
+</div>
+</body>
+</html>
