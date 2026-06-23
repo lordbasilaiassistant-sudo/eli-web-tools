@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paid Tools Your AI Agent Can Call: Web Audits & Contact Data (MCP + x402)</title>
+<meta name="description" content="How to give an AI agent real web-data capabilities — on-page SEO audits and contact extraction — as pay-per-use tools via Apify MCP and x402, with no API keys to manage." />
+<link rel="canonical" href="https://lordbasilaiassistant-sudo.github.io/eli-web-tools/guides/tools-for-ai-agents.html" />
+<meta property="og:title" content="Paid Tools Your AI Agent Can Call (MCP + x402)" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Paid Tools Your AI Agent Can Call: Web Audits & Contact Data (MCP + x402)","author":{"@type":"Organization","name":"Eli Web Tools"},"about":"tools for AI agents"}
+</script>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#21262d;--txt:#e6edf3;--mut:#9aa6b2;--accent:#58a6ff;--ok:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt)}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent)}
+  h1{font-size:29px;line-height:1.25;letter-spacing:-.02em;margin-bottom:10px}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:28px}
+  h2{font-size:21px;margin:30px 0 10px}
+  p{margin-bottom:14px;color:#d6dee7}
+  ul{margin:0 0 16px 20px;color:#d6dee7}
+  li{margin-bottom:8px}
+  .cta{margin:26px 0;background:linear-gradient(180deg,var(--card),#0e1420);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .cta a{display:inline-block;background:#1f6feb22;border:1px solid var(--accent);color:var(--accent);text-decoration:none;border-radius:8px;padding:8px 13px;font-weight:600;margin:8px 8px 0 0}
+  code{background:#161b22;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:14px}
+  .home{color:var(--mut);font-size:14px;text-decoration:none}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="home" href="../index.html">← Eli Web Tools</a>
+  <h1>Paid Tools Your AI Agent Can Call (MCP + x402)</h1>
+  <p class="meta">Give an agent real web-data capabilities — pay-per-use, no API keys to manage.</p>
+
+  <p>An LLM agent is only as capable as the tools it can call. Two patterns have made it dramatically easier to plug real, paid capabilities into an agent without provisioning API keys or hosting anything: <strong>MCP</strong> (the Model Context Protocol, for tool discovery and calling) and <strong>x402</strong> (HTTP 402 micropayments, so an agent can pay-per-call autonomously). Here's how to use them with two concrete web-data tools.</p>
+
+  <h2>Why pay-per-use beats API keys for agents</h2>
+  <ul>
+    <li><strong>No signup, no key rotation</strong> — the agent pays per call; there's no account to provision or secret to leak.</li>
+    <li><strong>Costs scale with usage</strong> — you pay $0.02 for one audit, not a $49/mo floor for a tool you call twice.</li>
+    <li><strong>Discoverable</strong> — MCP-exposed tools show up in the agent's tool list automatically.</li>
+  </ul>
+
+  <h2>Tool 1 — On-page SEO + tech audit</h2>
+  <p>Give your agent a URL and it gets back the page's title/meta/heading/canonical/OG analysis, detected tech stack, and an on-page score with issues — useful for SEO agents, site-migration bots, or competitor research.</p>
+  <p><a href="https://apify.com/eliai/website-seo-tech-auditor" target="_blank" rel="noopener">Website SEO &amp; Tech Auditor →</a> ($0.02/audit, callable via Apify MCP)</p>
+
+  <h2>Tool 2 — Contact extraction</h2>
+  <p>Point it at a page or domain and it returns clean emails, validated phone numbers, and social profiles — for lead-gen agents and CRM-enrichment workflows.</p>
+  <p><a href="https://apify.com/eliai/contact-details-extractor" target="_blank" rel="noopener">Contact Details Extractor →</a> ($0.03/page, callable via Apify MCP)</p>
+
+  <div class="cta">
+    <strong>Both run as agent tools out of the box</strong>
+    <p style="color:var(--mut);font-size:15px;margin:6px 0 4px">They're live on the Apify Store, which exposes every actor as an MCP tool with pay-per-result billing — so a Claude, Cursor, or Windsurf agent can discover and call them with no key. Run them by hand first to see the output shape:</p>
+    <a href="https://apify.com/eliai/website-seo-tech-auditor" target="_blank" rel="noopener">SEO Auditor</a>
+    <a href="https://apify.com/eliai/contact-details-extractor" target="_blank" rel="noopener">Contact Extractor</a>
+  </div>
+
+  <h2>The bigger pattern</h2>
+  <p>The web-data layer for agents is shifting from "sign up, get a key, manage a quota" to "discover a tool, call it, pay a few cents." Building agent workflows on pay-per-use MCP tools means your costs track real usage and you can swap capabilities in and out without contracts. Start with the two above and grow from there.</p>
+
+  <footer>
+    By <a href="../index.html">Eli Web Tools</a> — clean, private browser &amp; web tools. No ads, no tracking.
+  </footer>
+</div>
+</body>
+</html>
