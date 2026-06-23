@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Extract Emails & Contact Details From Any Website (2026)</title>
+<meta name="description" content="How to find and extract emails, phone numbers and social profiles from a web page — the signals to look for, manual vs automated methods, and how to do it responsibly at scale." />
+<link rel="canonical" href="https://lordbasilaiassistant-sudo.github.io/eli-web-tools/guides/extract-website-contacts.html" />
+<meta property="og:title" content="How to Extract Emails & Contact Details From Any Website (2026)" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How to Extract Emails & Contact Details From Any Website (2026)","author":{"@type":"Organization","name":"Eli Web Tools"},"about":"extract contact details from a website"}
+</script>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#21262d;--txt:#e6edf3;--mut:#9aa6b2;--accent:#58a6ff;--ok:#3fb950}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--txt)}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 22px 80px}
+  a{color:var(--accent)}
+  h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin-bottom:10px}
+  .meta{color:var(--mut);font-size:14px;margin-bottom:28px}
+  h2{font-size:21px;margin:30px 0 10px}
+  p{margin-bottom:14px;color:#d6dee7}
+  ul{margin:0 0 16px 20px;color:#d6dee7}
+  li{margin-bottom:8px}
+  .cta{margin:26px 0;background:linear-gradient(180deg,var(--card),#0e1420);border:1px solid var(--line);border-radius:12px;padding:20px}
+  .cta a{display:inline-block;background:#1f6feb22;border:1px solid var(--accent);color:var(--accent);text-decoration:none;border-radius:8px;padding:9px 14px;font-weight:600;margin-top:8px}
+  .note{background:#161b22;border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:8px;padding:12px 14px;color:var(--mut);font-size:15px;margin:16px 0}
+  code{background:#161b22;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:14px}
+  .home{color:var(--mut);font-size:14px;text-decoration:none}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="home" href="../index.html">← Eli Web Tools</a>
+  <h1>How to Extract Emails &amp; Contact Details From Any Website</h1>
+  <p class="meta">The signals to look for, manual vs. automated methods, and how to do it responsibly at scale.</p>
+
+  <p>Whether you're enriching a CRM, building a B2B prospect list, or just trying to reach a company, the contact details are usually already public on the site — you just have to know where the page hides them. Here's how to find and extract them reliably.</p>
+
+  <h2>Where contact details actually live in the HTML</h2>
+  <ul>
+    <li><strong><code>mailto:</code> links</strong> — the most reliable email signal; an <code>&lt;a href="mailto:..."&gt;</code> is an explicit, intended contact.</li>
+    <li><strong><code>tel:</code> links</strong> — the cleanest phone signal, free of the false positives you get from scraping raw text (dates, prices, IDs).</li>
+    <li><strong>Footer &amp; contact page</strong> — most sites concentrate email, phone, and address here.</li>
+    <li><strong>Social profile links</strong> — LinkedIn, X/Twitter, Facebook, Instagram, YouTube, GitHub URLs in the header/footer.</li>
+    <li><strong>Structured data</strong> — some sites expose an <code>Organization</code> schema with <code>email</code> and <code>telephone</code> fields.</li>
+  </ul>
+
+  <h2>Manual vs. automated</h2>
+  <p>For one page, <kbd>Ctrl/Cmd-F</kbd> for "@" and check the footer. But the moment you have a list of domains — a conference attendee list, a directory, a competitor set — manual stops scaling. That's where a parser that pulls every <code>mailto:</code>, validates phone formats, and resolves social URLs in one pass saves hours.</p>
+
+  <div class="cta">
+    <strong>Extract contacts from any URL in one call</strong>
+    <p style="color:var(--mut);font-size:15px;margin:6px 0 0">Our <strong>Contact Details Extractor</strong> fetches any page or domain and returns clean emails, validated phone numbers, and social profiles — no API key, pay per page. Runs as a plain API and as an agent tool via Apify MCP.</p>
+    <a href="https://apify.com/eliai/contact-details-extractor" target="_blank" rel="noopener">Run the Contact Extractor →</a>
+  </div>
+
+  <div class="note"><strong>Do it responsibly.</strong> Only collect publicly published contact details, respect each site's terms and <code>robots.txt</code>, honor opt-outs, and follow applicable laws (GDPR/CAN-SPAM) when you reach out. Good data is only useful if it's used legitimately.</div>
+
+  <h2>Pair it with a site check</h2>
+  <p>Prospecting a company often means sizing it up too — our <a href="https://apify.com/eliai/website-seo-tech-auditor" target="_blank" rel="noopener">Website SEO &amp; Tech Auditor</a> tells you their on-page SEO health and tech stack (WordPress, Shopify, Next.js, etc.) in the same workflow, so you walk into outreach already informed.</p>
+
+  <footer>
+    By <a href="../index.html">Eli Web Tools</a> — clean, private browser &amp; web tools. No ads, no tracking.
+  </footer>
+</div>
+</body>
+</html>
